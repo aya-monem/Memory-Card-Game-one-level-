@@ -1,0 +1,97 @@
+<!doctype html >
+<html>
+    <head>
+        <title> Memory Card Game </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    </head>
+    <body>
+         
+        <h2 >Memory Card Game</h2>
+        <div class="beforeTable">
+               <button type="button" onclick="start_game()">Start/Restart</button>
+               <p id="moves"></p>
+               <p id="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+               </p>
+               <p id="counter_show"></p>
+        </div>
+        
+               <div id="game_table">
+                    <!-- first row -->
+                    <div  class="firstRow arrange">
+
+                         <div class="card"> <i class="fas fa-tree"></i> </div>
+
+                         <div class="card">  <i class="fas fa-tree"></i> </div>
+
+                         <div class="card"> <i class="fas fa-star" ></i>  </div>
+
+                         <div class="card"> <i class="fas fa-star" ></i> </div>  
+                         
+
+                    </div>
+                         
+
+                    <!-- second row -->
+                    <div class="secondRow arrange">
+
+                         <div class="card"> <i class="fas fa-home" ></i> </div>
+          
+                         <div class="card">  <i class="fas fa-home"></i>  </div>
+
+                         <div class="card">  <i class="fas fa-dove" ></i>  </div>
+          
+                         <div class="card">   <i class="fas fa-dove" ></i> </div>
+
+                    </div>
+                          
+                    <!-- third row -->
+                    <div class="thirdRow arrange">
+                         
+                         <div class="card"> <i class="fas fa-flag" ></i>  </div>
+          
+                         <div class="card"> <i class="fas fa-flag" ></i>  </div>
+
+                         <div class="card"> <i class="fas fa-apple-alt" ></i>  </div>
+          
+                         <div class="card"> <i class="fas fa-apple-alt" ></i> </div>
+
+                    </div>
+                        
+                         <!-- forth row -->
+                     <div class="forthRow arrange">
+                                    
+                         <div class="card"> <i class="fas fa-car"></i> </div>
+
+                         <div class="card"> <i class="fas fa-car"></i>  </div>
+
+                         <div class="card"> <i class="fas fa-plane"></i> </div>
+
+                         <div class="card"> <i class="fas fa-plane"></i> </div>
+
+                     </div>     
+
+               </div>
+
+                   <!-- popup finish message -->
+               <div id="popUpFinal">
+                    <i class="fas fa-times" onclick="disapear()"></i>
+                    <h1 style="color:red;"> Congratulation </h1>
+                    <p >
+                         You are a winner.... 
+                         <i class="fas fa-trophy"></i>
+                     </p> 
+                    <p > you made <span id="final_moves"></span></p>
+                    <P>in ( <span id="final_time"></span> )</P>
+                    <p> with rate <span id="final_rate"></span></p>
+                    <button type="button" onclick="start_game()">Play Again</button>
+                                   
+               </div>
+                 
+          
+        <script src="memory_script.js"></script>
+    </body>
+</html>
